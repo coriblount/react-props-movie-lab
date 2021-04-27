@@ -20,7 +20,7 @@ export default class MovieShowcase extends Component {
         <MovieCard 
         title={movie.title}
         IMDBRating={movie.IMDBRating}
-        genre={movie.genre}
+        genres={movie.genres}
         poster={movie.poster}
         />
       )
@@ -32,7 +32,6 @@ export default class MovieShowcase extends Component {
     return (
       <div id="movie-showcase">
         {this.generateMovieCards()}
-        <MovieCard />
       </div>
     )
   }
